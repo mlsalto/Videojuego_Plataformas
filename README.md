@@ -1,6 +1,6 @@
 # VIDEOJUEGO
 
-Este proyecto consiste en la programación desde cero de un videojuego, a elegir por los integrantes del grupo
+Este proyecto consiste en la programación desde cero de un videojuego a elegir por los integrantes del grupo
 
 # Integrantes del equipo
 
