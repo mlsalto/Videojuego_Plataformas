@@ -2,7 +2,7 @@
 
 Este proyecto consiste en la programación desde cero de un videojuego a elegir por los integrantes del grupo
 
-
+~Leercorreo();
 # Integrantes del equipo
 
  · Teresa Ramírez Haro, @teresaramirezharo
