@@ -15,7 +15,7 @@ Este proyecto consiste en la programación desde cero de un videojuego a elegir 
  
  · María Lisa Salto Molodojen, @mlsalto
 	
- 
+ # descripción del proyecto
  
  # Objetivos del trabajo
  
