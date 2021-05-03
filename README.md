@@ -15,8 +15,8 @@ Este proyecto consiste en la programación desde cero de un videojuego a elegir 
  
  · María Lisa Salto Molodojen, @mlsalto
 	
- # descripción del proyecto
- 
+ # Descripción del proyecto
+  Juego de plataforma 2D con 4 niveles donde un personaje se va moviendo y encontrándose con diferentes objetos que debe recolectar o esquivar de los cuales algunos le ayudarán a combatir a un personaje final que será diferente en los 4 niveles.
  # Objetivos del trabajo
  
  
