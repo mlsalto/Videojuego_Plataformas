@@ -1,0 +1,14 @@
+﻿  Personaje.cpp
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.h(27,89): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.h(27,77): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.h(28,81): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.h(28,69): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.h(29,79): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.h(29,68): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.cpp(22,40): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.cpp(22,28): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.cpp(32,35): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.cpp(32,23): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.cpp(38,37): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\src\Personaje.cpp(38,25): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+  Mi_Juego.vcxproj -> C:\Users\lisas\OneDrive\Escritorio\VIDEOJUEGO-main (1)\VIDEOJUEGO-main\bin\Mi_Juego.exe
