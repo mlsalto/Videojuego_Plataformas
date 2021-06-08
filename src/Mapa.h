@@ -1,7 +1,9 @@
 #pragma once
-
+#include <iostream>
 #include "freeglut.h"
 #include "ETSIDI.h"
+#include "MatrizTile.h"
+
 using namespace ETSIDI;
 
 class Mapa
@@ -15,17 +17,21 @@ public:
 
 	void dibujarMapa();
 	void dibujarMapaptr(Mapa* ptr);
+	
 private:
-
-	GLTexture ladrillo;//1
-	GLTexture agua;//2
-	GLTexture persona;//3
-	GLTexture aire;//0
 	GLTexture facultad;
+	MatrizTile celdas;
 
+
+	//GLTexture ladrillo;//1
+	//GLTexture agua;//2
+	//GLTexture persona;//3
+	//GLTexture aire;//0
+	//GLTexture facultad;
 	//TO DO implementacion con asignacion dinamica de mem en funcion de las dimensiones del nivel del txt donde este
 	//diseñado el mapa
-	int nivel[10][25] {
+	//
+	/*int nivel[10][25]  {
 		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -36,7 +42,7 @@ private:
 		{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
 		{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
 		{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2}
-	};
+	};*/
 
 };
 
