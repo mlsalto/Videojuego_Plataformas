@@ -1,38 +1,43 @@
 #pragma once
-
 #include "freeglut.h"
 #include "ETSIDI.h"
+#include "ObjetoMovil.h"
+
 using namespace ETSIDI;
 
-class Personaje
+class Personaje:public ObjetoMovil
 {
 public:
-	Personaje();
 
-
+	Personaje(void);
+	//virtual ~Personaje(void);
+	
 	void dibujar();
 	void mover(float t);
 	void teclaEspecialAbajo(unsigned char key);
 
-	void setVel(float vx, float vy);
-	void setPos(float px, float py);
-	Vector2D getPos();
-	virtual ~Personaje() {}
+	int getVidas();
+
+	float getSize();
+
+	virtual ~Personaje () {}
 
 private:
+	
+	enum Estado {APOYADO,VOLANDO};
+	Estado estado; 
 
-
-	SpriteSequence correr{ "Texturas/correrdcha.png", 8, 1, 100, true, posicion.x, posicion.y, ancho = 16, alto = 16 };
-	SpriteSequence idle{ "Texturas/idle.png", 6, 1, 100, true, posicion.x, posicion.y,ancho = 16, alto = 16 };
-	SpriteSequence saltar{ "Texturas/saltar.png",8,1,180,true,posicion.x,posicion.y,ancho = 16, alto = 16 }; //arreglar sprite
+	SpriteSequence correr{ "Texturas/correrdcha.png", 8, 1, 100, true, posicion.x, posicion.y, ancho = 15, alto =15};
+	SpriteSequence idle{ "Texturas/idle.png", 6, 1, 100, true, posicion.x, posicion.y,ancho =15, alto = 15};
+	SpriteSequence saltar{ "Texturas/saltar.png",8,1,180,true,posicion.x,posicion.y,ancho = 15, alto = 15}; //arreglar sprite
 
 	float dcha;
+	int vidas;
 
 	float ancho, alto;
 
-	Vector2D posicion;
-	Vector2D velocidad;
-	Vector2D aceleracion;
 
 	friend class Interaccion;
+	friend class Mundo;
 };
+

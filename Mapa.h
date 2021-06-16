@@ -3,7 +3,6 @@
 #include "freeglut.h"
 #include "ETSIDI.h"
 #include "MatrizTile.h"
-#include "Personaje.h"
 
 using namespace ETSIDI;
 
@@ -18,14 +17,11 @@ public:
 
 	void dibujarMapa();
 	void dibujarMapaptr(Mapa* ptr);
-	void mover();
-	void teclaEspecial(unsigned char key);
-
+	
 private:
-
-	GLTexture facultad;
+	//GLTexture facultad;
 	MatrizTile celdas;
-	Personaje universitario;
+
 
 	//GLTexture ladrillo;//1
 	//GLTexture agua;//2

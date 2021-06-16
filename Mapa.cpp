@@ -4,7 +4,7 @@
 Mapa::Mapa()
 {
 	celdas.cargarMatrix(1);									//he puesto el numero 1 porque es el nivel 1 habrá que modificarlo
-	facultad= getTexture("Texturas/facultad.png");
+	//facultad= getTexture("Texturas/facultad.png");
 	
 }
 
@@ -84,22 +84,21 @@ void Mapa::dibujarMapa()
 
 
 	celdas.cargarMatrix(1);
-	celdas.Dibuja();		
+	celdas.Dibuja();									//MatrizTile Dibujar
 
-	universitario.dibujar();							//Personaje Dibujar//MatrizTile Dibujar
-	glEnable(GL_TEXTURE_2D);							//fondo de la pantalla
-	glBindTexture(GL_TEXTURE_2D, facultad.id);
-	glDisable(GL_LIGHTING);
-	glBegin(GL_POLYGON);
 
-	
-	glTexCoord2d(0, 1); glVertex3f(0, -32, -3);
-	glTexCoord2d(1, 1); glVertex3f(84, -32, -3);
-	glTexCoord2d(1, 0); glVertex3f(84,32,-3);
-	glTexCoord2d(0, 0); glVertex3f(0, 32, -3);
-	glEnd();
-	glEnable(GL_LIGHTING);
-	glDisable(GL_TEXTURE_2D); 
+	//glEnable(GL_TEXTURE_2D);							//fondo de la pantalla
+	//glBindTexture(GL_TEXTURE_2D, facultad.id);
+	//glDisable(GL_LIGHTING);
+	//glBegin(GL_POLYGON);
+
+	//glTexCoord2d(0, 1); glVertex3f(0, -32, -3);
+	//glTexCoord2d(1, 1); glVertex3f(84, -32, -3);
+	//glTexCoord2d(1, 0); glVertex3f(84,32,-3);
+	//glTexCoord2d(0, 0); glVertex3f(0, 32, -3);
+	//glEnd();
+	//glEnable(GL_LIGHTING);
+	//glDisable(GL_TEXTURE_2D);
 
 }
 
@@ -107,20 +106,6 @@ void Mapa::dibujarMapaptr(Mapa* ptr)
 {
 	(*ptr).dibujarMapa();
 }
-
-void Mapa::mover()
-{
-	celdas.colision(universitario);
-	//bloques->colision(universitario);
-	universitario.mover(0.025f);
-}
-
-void Mapa::teclaEspecial(unsigned char key)
-{
-	universitario.teclaEspecialAbajo(key);
-}
-	
-
 
 
 

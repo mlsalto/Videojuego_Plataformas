@@ -1,7 +1,6 @@
 #include "MatrizTile.h"
 #include <iostream>
 #include <fstream>
-#include "Interaccion.h"
 using namespace std;
 
 					
@@ -37,15 +36,6 @@ void MatrizTile::Dibuja()
 		for (int j = 0; j < 25; j++) {
 			(&mimatriz[i1][j])->Dibuja();							//llama a la funcion dibuja de la clase Tile para cada tile de la matriz
 			
-		}
-	}
-}
-
-void MatrizTile::colision(Personaje p)
-{
-	for (int i1 = 0; i1 < 10; i1++) {
-		for (int j = 0; j < 25; j++) {
-			Interaccion::colision(*(&mimatriz[i1][j]), p);
 		}
 	}
 }

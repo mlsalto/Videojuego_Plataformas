@@ -6,15 +6,14 @@ Tile::Tile()
 	tipo = 0;
 	columna = 0;
 	fila = 0;
-	//lado = 4.0f;
-	ancho = 4.0f;
-	altura = 4.0f;
+	lado = 4.0f;
 												//defino la posicion mediante los índices columna y fila que hace las veces de la coordenada superior izquierda del cuadrado
 												//la posicion será la suma de la mitad del lado a la coumna por el valor establecido para el lado
-	posicion.x = (double)ancho* ((double)columna+ 0.5f);
-	posicion.y = (double)altura *((double)-fila - 0.5f);
+	posicion.x = (double)lado* ((double)columna+ 0.5f);
+	posicion.y = (double)lado *((double)-fila - 0.5f);
 	textura=getTexture("Texturas/textura1.png");//defecto ladrillo
 
+	//facultad = getTexture("Texturas/facultad.png");
 }
 
 void Tile::setTipo(int _tipo)
@@ -33,8 +32,8 @@ void Tile::setPosicion()
 {
 	//defino la posicion mediante los índices columna y fila que hace las veces de la coordenada superior izquierda del cuadrado
 	//la posicion será la suma de la mitad del lado a la coumna por el valor establecido para el lado
-	posicion.x = (double)ancho * ((double)columna + 0.5f);
-	posicion.y = (double)altura * ((double)-fila - 0.5f);
+	posicion.x = (double)lado * ((double)columna + 0.5f);
+	posicion.y = (double)lado * ((double)-fila - 0.5f);
 }
 
 void Tile::Dibuja()
@@ -63,10 +62,10 @@ void Tile::Dibuja()
 		glDisable(GL_LIGHTING);
 		glBegin(GL_POLYGON);
 
-		glTexCoord2d(0, 1); glVertex3f(columna * ancho, fila * (-altura), 0);
-		glTexCoord2d(1, 1); glVertex3f((columna + 1) * ancho, fila * (-altura), 0);
-		glTexCoord2d(1, 0); glVertex3f((columna + 1) * ancho, (fila + 1) * (-altura), 0);
-		glTexCoord2d(0, 0); glVertex3f(columna * ancho, (fila + 1) * (-altura), 0);
+		glTexCoord2d(0, 1); glVertex3f(columna * 4, fila * (-4), 0);
+		glTexCoord2d(1, 1); glVertex3f((columna + 1) * 4, fila * (-4), 0);
+		glTexCoord2d(1, 0); glVertex3f((columna + 1) * 4, (fila + 1) * (-4), 0);
+		glTexCoord2d(0, 0); glVertex3f(columna * 4, (fila + 1) * (-4), 0);
 		glEnd();
 		glEnable(GL_LIGHTING);
 		glDisable(GL_TEXTURE_2D);
@@ -78,11 +77,10 @@ void Tile::Dibuja()
 		glDisable(GL_LIGHTING);
 		glBegin(GL_POLYGON);
 
-		glTexCoord2d(0, 1); glVertex3f(columna * ancho, fila * (-altura), 0);
-		glTexCoord2d(1, 1); glVertex3f((columna + 1) * ancho, fila * (-altura), 0);
-		glTexCoord2d(1, 0); glVertex3f((columna + 1) * ancho, (fila + 1) * (-altura), 0);
-		glTexCoord2d(0, 0); glVertex3f(columna * ancho, (fila + 1) * (-altura), 0);
-
+		glTexCoord2d(0, 1); glVertex3f(columna * 4, fila * (-4), 0);
+		glTexCoord2d(1, 1); glVertex3f((columna + 1) * 4, fila * (-4), 0);
+		glTexCoord2d(1, 0); glVertex3f((columna + 1) * 4, (fila + 1) * (-4), 0);
+		glTexCoord2d(0, 0); glVertex3f(columna * 4, (fila + 1) * (-4), 0);
 		glEnd();
 		glEnable(GL_LIGHTING);
 		glDisable(GL_TEXTURE_2D);
