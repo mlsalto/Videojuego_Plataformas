@@ -1,6 +1,11 @@
 # VIDEOJUEGO
 Este proyecto consiste en la programación desde cero de un videojuego a elegir por los integrantes del grupo
+# ADVERTENCIA
+Una vez descargado el archivo .zip de GitHub y extraído dicho archivo con WinRar o Winzip, el nombre de la carpeta deberá ser sustituido por Mi_Juego.
 
+-El tiempo inicial de carga del juego antes de ejecutarse es de unos 40 s debido a la carga de todos los sprites y recursos de audio.
+-Debido a la calidad superior del tercer Boss, se producirá un retardo en la carga de este nivel.
+-La primera vez que se ejecuta un disparo en la pantalla del Boss se producirá un pequeño retardo en la carga de este.
 # Integrantes del equipo
 · Teresa Ramírez Haro, @teresaramirezharo
 
