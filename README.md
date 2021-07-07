@@ -7,7 +7,7 @@ Una vez descargado el archivo .zip de GitHub y extraído dicho archivo con WinRa
 -Debido a la calidad superior del tercer Boss, se producirá un retardo en la carga de este nivel.
 -La primera vez que se ejecuta un disparo en la pantalla del Boss se producirá un pequeño retardo en la carga de este.
 
-# ELNACE A VIDEO DEMOSTRACIÓN 
+# ENLACE A VIDEO DEMOSTRACIÓN 
 https://www.youtube.com/watch?v=jpauDcUTDq4
 
 # Integrantes del equipo
